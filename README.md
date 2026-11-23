@@ -20,7 +20,7 @@
 
 **Concept Place** is an AI-powered business workspace built for founders who want to move from a raw idea to a focused next step.
 
-Bring business chat, marketing strategy, editable content drafts, campaign calendars, financial scenario analysis, and workflow discovery into one connected workspace—so you can explore, test, create, and launch with greater clarity.
+Bring business chat, marketing strategy, editable content drafts, campaign calendars, financial scenario analysis, and workflow discovery into one connected workspace—so you can explore, test, create, and keep moving.
 
 > Built by **Grow Millions Private Limited** in India.
 
@@ -39,7 +39,7 @@ Bring business chat, marketing strategy, editable content drafts, campaign calen
 
 | | Feature | Designed to help you |
 |:---:|---|---|
-| 🧠 | **MARK AI** | Ask business questions, reason through decisions, and continue with focused follow-ups. Use Normal mode for depth or Duo mode to compare trade-offs. |
+| 🧠 | **MARK AI** | Ask business questions, reason through decisions, and continue with focused follow-ups. Use Normal mode for depth or Duo mode to compare trade-offs. Get **50 free credits every month** with MARK AI Duo mode. |
 | 📈 | **Marketing Strategist** | Shape an offer and audience into a practical marketing plan and campaign direction. |
 | ✍️ | **Content Generator** | Create editable text and storyboard drafts for your campaigns. |
 | 🗓️ | **Content Calendar** | Organize posts and filter campaign activity by date or platform. |
