@@ -3,7 +3,7 @@
 > An AI workspace for founders to explore ideas, test assumptions, and launch their first campaign.
 
 <p align="center">
-  <img src="assets/concept-place-banner.svg" alt="Concept Place — Test ideas. Build a plan. Launch with clarity." width="100%">
+  <img src="assets/Banner-conceptplace.PNG" alt="Concept Place — Bring your idea to life" width="100%">
 </p>
 
 [![Visit Concept Place](https://img.shields.io/badge/Visit-Concept%20Place-6C5CE7?style=for-the-badge)](https://www.conceptplace.in/)
@@ -13,7 +13,17 @@ Built by Grow Millions Private Limited in India.
 
 ## About
 
-Concept Place brings business chat, marketing planning, content drafts, campaign calendars, startup scenario analysis, and automation discovery into one connected workspace. Its purpose is to help founders move from an idea to a practical next step, such as a customer interview, small pilot, or campaign they can run this week.
+Concept Place brings business chat, marketing planning, content drafts, campaign calendars, startup scenario analysis, and automation discovery into one connected workspace. Its purpose is to help founders test ideas, understand the assumptions behind them, and move toward practical next steps with more clarity.
+
+## Preview
+
+<p align="center">
+  <img src="assets/Screenshot%202026-11-23%20182848.png" alt="Concept Place idea exploration preview" width="100%">
+</p>
+
+<p align="center">
+  <img src="assets/Screenshot%202026-11-23%20182913.png" alt="Concept Place workspace preview" width="100%">
+</p>
 
 ## Features
 
@@ -24,7 +34,7 @@ Concept Place brings business chat, marketing planning, content drafts, campaign
 | **Content Generator** | Create editable text and storyboard drafts. It does not currently create finished images or videos. |
 | **Content Calendar** | Organize campaign posts; filter by date or platform. |
 | **Auto Post** | Prepare posts and schedules for supported connected social accounts. You review and approve content before publication. |
-| **Oasis Discovery** | A business scenario simulator that helps founders explore how pricing, costs, demand, and customer-acquisition assumptions can affect cash flow and profitability. Use it to test an idea, see which assumptions matter most, and identify what to validate first. Our longer-term vision is a virtual-world simulation with simulated customers and real-life scenarios; that engine is not yet enabled. |
+| **Oasis Discovery** | A business scenario simulator that helps founders explore how pricing, costs, demand, and customer-acquisition assumptions can affect cash flow and profitability. Use it to test whether assumptions are viable before committing resources. |
 | **Automation Marketplace** | Find ready-made workflows for follow-ups and everyday operations. Some require external accounts or separate purchase. |
 | **Compliance** | Track India-focused incorporation milestones and business tasks in a practical checklist. |
 
