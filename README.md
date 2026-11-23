@@ -1,3 +1,4 @@
+
 # Concept Place
 
 > An AI workspace for founders to explore ideas, test assumptions, and launch their first campaign.
