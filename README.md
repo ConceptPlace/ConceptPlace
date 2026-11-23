@@ -1,167 +1,90 @@
-<div align="center">
-  <h1>MARK AI Backend</h1>
-  <p><strong>Serverless foundations for the Concept Place marketing workspace.</strong></p>
-  <p>
-    <img src="https://img.shields.io/badge/AWS-SAM-FF9900?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS SAM" />
-    <img src="https://img.shields.io/badge/AWS-Lambda-FF9900?style=flat-square&logo=awslambda&logoColor=white" alt="AWS Lambda" />
-    <img src="https://img.shields.io/badge/Amazon-API%20Gateway-FF4F8B?style=flat-square&logo=amazonapigateway&logoColor=white" alt="Amazon API Gateway" />
-    <img src="https://img.shields.io/badge/Python-3-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3" />
-  </p>
-  <p><a href="https://www.conceptplace.in/">Visit Concept Place →</a></p>
-</div>
+# Concept Place
+
+> An AI workspace for founders to explore ideas, test assumptions, and launch their first campaign.
+
+[![Visit Concept Place](https://img.shields.io/badge/Visit-Concept%20Place-6C5CE7?style=for-the-badge)](https://www.conceptplace.in/)
+![Early access](https://img.shields.io/badge/Status-Early%20access-F39C12?style=for-the-badge)
+
+Built by Grow Millions Private Limited in India.
+
+## About
+
+Concept Place brings business chat, marketing planning, content drafts, campaign calendars, startup scenario analysis, and automation discovery into one connected workspace. Its purpose is to help founders move from an idea to a practical next step, such as a customer interview, small pilot, or campaign they can run this week.
+
+## Features
+
+| Feature | What it helps with |
+| --- | --- |
+| **MARK AI** | Ask business questions, get practical advice, and ask follow-up questions. Use Normal mode for focused answers and Duo mode to compare trade-offs. |
+| **Marketing Strategist** | Turn an offer and audience into a marketing plan and campaign direction. |
+| **Content Generator** | Create editable text and storyboard drafts. It does not currently create finished images or videos. |
+| **Content Calendar** | Organize campaign posts; filter by date or platform. |
+| **Auto Post** | Prepare posts and schedules for supported connected social accounts. You review and approve content before publication. |
+| **Oasis Discovery** | Challenge an idea and explore pricing, costs, demand, and acquisition assumptions across five market scenarios. Save runs and add real observations as you learn. |
+| **Automation Marketplace** | Find ready-made workflows for follow-ups and everyday operations. Some require external accounts or separate purchase. |
+| **Compliance** | Track India-focused incorporation milestones and business tasks in a practical checklist. |
+
+## How to use Concept Place
+
+1. Visit [conceptplace.in](https://www.conceptplace.in/) and start free. The free plan currently includes 50 AI credits each month with no card required.
+2. Tell MARK AI what you are building, where you are today, and the decision you need to make.
+3. Build a marketing plan, draft content, or explore assumptions behind the business.
+4. Use Oasis Discovery to test assumptions such as pricing, costs, demand, or customer acquisition cost.
+5. Review the facts and edits so they fit your audience.
+6. Organize your next step in Content Calendar, review a publishing schedule, or discover an automation.
+7. Run a small real-world experiment, record what you learn, and refine the plan.
+
+## Important notes
+
+- Scenario results depend on the assumptions you enter. They are exploration tools, not guaranteed forecasts.
+- Social availability depends on platform permissions, account type, and supported formats.
+- Important financial, legal, and compliance decisions should be checked with qualified professionals.
+- The product is being built in phases, and early-access feedback shapes what comes next.
+
+## Explore
+
+- [Start with MARK AI](https://www.conceptplace.in/mark-ai-new)
+- [Open Marketing Strategist](https://www.conceptplace.in/marketing-strategist)
+- [Explore Content Calendar](https://www.conceptplace.in/content-calendar)
+- [Explore Auto Post](https://www.conceptplace.in/auto-post)
+- [Discover Oasis](https://www.conceptplace.in/oasis-discovery)
+- [Explore Automation Marketplace](https://www.conceptplace.in/automation-market-place)
+- [Explore Compliance](https://www.conceptplace.in/compliance)
+- [Contact Grow Millions](https://www.conceptplace.in/contact)
 
 ---
 
-## Overview
+## MARK AI Backend
 
-mark-ai-backend contains the source code and supporting files for a serverless application built with the AWS Serverless Application Model (SAM) CLI. It provides the backend foundation for MARK AI and Concept Place workflows, using AWS Lambda functions behind an Amazon API Gateway API.
-
-The project is structured so the application can be built, tested, run locally, and deployed through the same SAM workflow. Infrastructure is declared in template.yaml, keeping the cloud resources and application code close together.
-
-## Architecture
-
-```text
-Client or workflow
-       │
-       ▼
-Amazon API Gateway
-       │
-       ▼
-AWS Lambda functions
-       │
-       ▼
-Application services and AWS resources
-```
-
-The AWS resources are defined in template.yaml. When the template changes, the same deployment process updates the infrastructure alongside the application code.
-
-## Repository structure
+This repository also contains the serverless backend source for MARK AI workflows, built with AWS SAM, AWS Lambda, Amazon API Gateway, and Python.
 
 | Path | Purpose |
 | --- | --- |
-| hello_world/ | Source code for the application's Lambda function. |
-| events/ | Sample invocation events for local Lambda testing. |
-| tests/ | Unit and integration tests. |
-| template.yaml | SAM template defining the application's AWS resources. |
-| samconfig.toml | Optional saved deployment configuration created by SAM. |
+| `hello_world/` | Lambda function source code. |
+| `events/` | Sample invocation events. |
+| `tests/` | Unit and integration tests. |
+| `template.yaml` | SAM infrastructure template. |
 
-## Prerequisites
+### Build and deploy
 
-Before building or deploying the application, install the following tools:
-
-- [AWS SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
-- [Python 3](https://www.python.org/downloads/)
-- [Docker Community Edition](https://hub.docker.com/search/?type=edition&offering=community)
-- An AWS account with credentials configured for the target environment
-
-### Optional IDE support
-
-The [AWS Toolkit](https://aws.amazon.com/tools/) adds SAM-aware development and debugging workflows to popular IDEs, including VS Code, Visual Studio, and JetBrains IDEs such as IntelliJ IDEA, PyCharm, WebStorm, GoLand, Rider, and DataGrip.
-
-## Quick start
-
-Build and deploy for the first time:
+Install the [AWS SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html), Python 3, Docker, and configure AWS credentials.
 
 ```bash
 sam build --use-container
 sam deploy --guided
 ```
 
-sam build --use-container installs the dependencies defined in hello_world/requirements.txt, creates a deployment package, and writes build artifacts to .aws-sam/build.
-
-sam deploy --guided packages and deploys the stack, then walks through the configuration that defines how it will run in AWS.
-
-## Deployment configuration
-
-During the guided deployment, SAM asks for the configuration needed to create or update the stack.
-
-| Setting | What it controls |
-| --- | --- |
-| **Stack name** | The CloudFormation stack name. Use a name that is unique within the AWS account and Region. |
-| **AWS Region** | The Region where the stack is deployed. |
-| **Confirm changes before deploy** | Whether SAM shows a change set for review before applying it. |
-| **Allow SAM CLI IAM role creation** | Allows SAM to create the IAM roles required by the Lambda resources. This requires the CAPABILITY_IAM capability. |
-| **Save arguments to samconfig.toml** | Saves the selected deployment settings so later deployments can run with fewer prompts. |
-
-After deployment, the API Gateway endpoint URL is available in the CloudFormation stack outputs.
-
-## Run and test locally
-
-### Invoke a single function
-
-Sample events in events/ can be passed directly to a Lambda function:
+### Test locally
 
 ```bash
 sam local invoke HelloWorldFunction --event events/event.json
-```
-
-### Start the local API
-
-Use SAM to emulate the API Gateway routes and invoke the local Lambda functions:
-
-```bash
 sam local start-api
 curl http://localhost:3000/
-```
-
-The route configuration is declared in template.yaml:
-
-```yaml
-Events:
-  HelloWorld:
-    Type: Api
-    Properties:
-      Path: /hello
-      Method: get
-```
-
-## Add AWS resources
-
-AWS SAM extends AWS CloudFormation with a simpler syntax for common serverless resources, including functions, events, and APIs. Add or change the relevant resources in template.yaml, then rebuild and deploy using the same workflow.
-
-For resources outside the SAM specification, standard [AWS CloudFormation resource types](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html) can be included in the template.
-
-## Logs and troubleshooting
-
-Use sam logs to fetch, tail, and filter logs from deployed Lambda functions:
-
-```bash
-sam logs -n HelloWorldFunction --stack-name "mark-ai-backend" --tail
-```
-
-This command works with AWS Lambda functions generally, not only functions deployed through SAM. For more examples, see the [SAM CLI logging documentation](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-logging.html).
-
-## Tests
-
-Install the test dependencies and run the test suites with pytest:
-
-```bash
-pip install -r tests/requirements.txt --user
-
-# Unit tests
 python -m pytest tests/unit -v
-
-# Integration tests (after deployment)
-AWS_SAM_STACK_NAME="mark-ai-backend" python -m pytest tests/integration -v
 ```
 
-Integration tests require the AWS_SAM_STACK_NAME environment variable to match the deployed stack.
-
-## Cleanup
-
-When the stack is no longer needed, delete it using the AWS CLI:
-
-```bash
-sam delete --stack-name "mark-ai-backend"
-```
-
-## Resources
-
-- [AWS SAM Developer Guide](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html)
-- [AWS SAM specification](https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md)
-- [AWS Serverless Application Repository](https://aws.amazon.com/serverless/serverlessrepo/)
-- [Concept Place](https://www.conceptplace.in/)
+See the [AWS SAM Developer Guide](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html) for more details.
 
 ---
 
-<p align="center">Built for reliable serverless workflows behind MARK AI.</p>
+<p align="center">Built for founders who want to test, learn, and launch with clarity.</p>
