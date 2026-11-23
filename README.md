@@ -1,7 +1,10 @@
-
 # Concept Place
 
 > An AI workspace for founders to explore ideas, test assumptions, and launch their first campaign.
+
+<p align="center">
+  <img src="assets/concept-place-banner.svg" alt="Concept Place — Test ideas. Build a plan. Launch with clarity." width="100%">
+</p>
 
 [![Visit Concept Place](https://img.shields.io/badge/Visit-Concept%20Place-6C5CE7?style=for-the-badge)](https://www.conceptplace.in/)
 ![Early access](https://img.shields.io/badge/Status-Early%20access-F39C12?style=for-the-badge)
